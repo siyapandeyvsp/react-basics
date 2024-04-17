@@ -33,11 +33,9 @@ const RenderingLists = () => {
             <RecipeList2 />
             <p><b>Challenge 4 of 4: </b>List with a separator
                 This example renders a famous haiku by Tachibana Hokushi, with each line wrapped in a p tag. Your job is to insert an hr / separator between each paragraph. Your resulting structure should look like this:
-
-
                 A haiku only contains three lines, but your solution should work with any number of lines. Note that hr / elements only appear between the p elements, not in the beginning or the end!
             </p>
-            <Poem/>
+            <Poem />
         </div>
     )
 }
