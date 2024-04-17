@@ -2,8 +2,8 @@ import Navbar from "./Navbar";
 
 function App() {
   return (
-    <div className="App p-5">
-     <Navbar/>
+    <div className="App flex justify-center items-center ">
+     <Navbar />
      
     </div>
   );
