@@ -3,6 +3,8 @@ import Scientists from './Scientists'
 import RecipeList from './RecipeList'
 import RecipeList2 from './RecipeList2'
 import Poem from './Poem'
+import AppendSum from './AppendSum'
+import CompanyDetail from './CompanyDetail'
 
 const RenderingLists = () => {
     return (
@@ -36,6 +38,10 @@ const RenderingLists = () => {
                 A haiku only contains three lines, but your solution should work with any number of lines. Note that hr / elements only appear between the p elements, not in the beginning or the end!
             </p>
             <Poem />
+
+            <b className='text-2xl font-bold text-center'>Object Rendering Practice </b>
+            <AppendSum/>
+            <CompanyDetail/>
         </div>
     )
 }
