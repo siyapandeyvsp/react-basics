@@ -5,6 +5,7 @@ import RecipeList2 from './RecipeList2'
 import Poem from './Poem'
 import AppendSum from './AppendSum'
 import CompanyDetail from './CompanyDetail'
+import CompanyDetail2 from './CompanyDetail2'
 
 const RenderingLists = () => {
     return (
@@ -42,6 +43,7 @@ const RenderingLists = () => {
             <b className='text-2xl font-bold text-center'>Object Rendering Practice </b>
             <AppendSum/>
             <CompanyDetail/>
+            <CompanyDetail2/>
         </div>
     )
 }

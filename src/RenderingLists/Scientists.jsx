@@ -1,7 +1,7 @@
 import { people } from '../data';
 import { getImageUrlss } from '../utils.js';
 const Mapped=(Items)=>{
-    console.log(Items)
+    // console.log(Items)
     const list=Items.map(person =>
         <li key={person.id}>
           <img

@@ -10,7 +10,7 @@ const EmployeeTable = ({ employees }) => {
     <div>
       <table>
         <thead>
-          <tr>
+          <tr >
             {headers.map((header) => (
               <th className="border-4 p-4" key={header}>
                 {header}
@@ -22,7 +22,7 @@ const EmployeeTable = ({ employees }) => {
           {rows.map((row) => (
             <tr key={row.id}>
               {row.map((cell) => (
-                <td className='border-4 p-5'>{cell} </td>
+                <td  key={cell} className='border-4 p-5'>{cell} </td>
               ))}
             </tr>
           ))}

@@ -2,8 +2,8 @@ import React from "react";
 import { companyData as data } from "../data";
 import EmployeeTable from "./EmployeeTable";
 const CompanyDetail = () => {
-  console.log("company data", data);
-  console.log("Object entires for company data",Object.entries(data))
+  // console.log("company data", data);
+  // console.log("Object entires for company data",Object.entries(data))
   return (
     <div>
       <h1 className="font-bold text-3xl text-blue-700 text-center">        

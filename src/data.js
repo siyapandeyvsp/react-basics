@@ -110,4 +110,22 @@ export const companyData = [
   },
 ];
 
-
+export const companyData2 = [
+  {
+    c1: [
+      { id: 1, name: "John Doe", profile: "Software Engineer" },
+      { id: 2, name: "Alice Smith", profile: "Data Scientist" },
+      { id: 3, name: "Bob Johnson", profile: "UI/UX Designer" },
+    ],
+    c2: [
+      { id: 1, name: "Emily Davis", profile: "Product Manager" },
+      { id: 2, name: "Michael Brown", profile: "Software Developer" },
+    ],
+    c3: [
+      { id: 1, name: "Jessica Wilson", profile: "Marketing Specialist" },
+      { id: 2, name: "David Lee", profile: "Financial Analyst" },
+      { id: 3, name: "Emma Martinez", profile: "HR Manager" },
+      { id: 4, name: "Christopher Taylor", profile: "Operations Manager" },
+    ],
+  },
+];

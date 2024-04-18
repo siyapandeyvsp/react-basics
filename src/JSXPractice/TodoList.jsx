@@ -1,7 +1,7 @@
 import React from 'react'
 import { person , baseUrl} from '../data';
 export default function TodoList() {
-    console.log(person)
+    // console.log(person)
     return (
       <div className="w-96 rounded-lg p-5"
       style={person.theme}>

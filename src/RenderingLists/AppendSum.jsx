@@ -9,9 +9,9 @@ const AppendSum = () => {
     { a: 14, b: 15 },
   ];
 
-  console.log(data);
+  // console.log(data);
   const newData = data.map((item) => ({ ...item, c: item.a + item.b }));
-  console.log("data", data, "\n", "newData", newData);
+  // console.log("data", data, "\n", "newData", newData);
   // const oldData=data
   // console.log ("old data",oldData)
   // data.forEach((element,index)=>element.c=element.a+element.b)
