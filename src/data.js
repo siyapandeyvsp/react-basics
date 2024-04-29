@@ -129,3 +129,41 @@ export const companyData2 = [
     ],
   },
 ];
+
+export const disneyCharacters = [
+  {
+    id: 0,
+    name: "Mickey Mouse",
+    description: "The iconic mascot of The Walt Disney Company.",
+    debutYear: 1928,
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSshX0J5jmfls6LnMkor8sMq3E_iakRWoWcCMhrF6yB_KPW4d6mOQvLISsTwP_w9OaCQj9wlQ",
+  },
+  {
+    id: 1,
+    name: "Donald Duck",
+    description: "Mickey Mouse's best friend known for his short temper.",
+    debutYear: 1934,
+    imageUrl: "https://img.etimg.com/thumb/width-1600,height-900,imgsize-182458,resizemode-75,msid-58980271/magazines/panache/some-fun-facts-about-disneys-most-popular-character-donald-duck.jpg",
+  },
+  {
+    id: 2,
+    name: "Goofy",
+    description: "A clumsy, good-hearted anthropomorphic dog.",
+    debutYear: 1932,
+    imageUrl:"https://lumiere-a.akamaihd.net/v1/images/ct_mickeymouseandfriends_goofy_ddt-16970_5d1d64dc.jpeg"
+  },
+  {
+    id: 3,
+    name: "Minnie Mouse",
+    description: "Mickey Mouse's girlfriend known for her sweet nature.",
+    debutYear: 1928,
+    imageUrl: "https://i.pinimg.com/736x/d6/b5/19/d6b51993b50a17c60d4e65e74fd24756.jpg",
+  },
+  {
+    id: 4,
+    name: "Pluto",
+    description: "Mickey Mouse's loyal pet dog.",
+    debutYear: 1930,
+    imageUrl:"https://c8.alamy.com/comp/BKGWDE/pluto-portrait-credit-disney-BKGWDE.jpg"
+  },
+];

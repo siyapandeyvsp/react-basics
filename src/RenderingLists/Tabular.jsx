@@ -5,7 +5,8 @@ export const Tabular = ({ data }) => {
         <thead className="text-2xl text-blue-900">
           <tr>
             {heads.map((head) => (
-              <th scope="col" className="px-6 py-4 border-4  rounded-lg">
+              <th key={head}
+              scope="col" className="px-6 py-4 border-4  rounded-lg">
                 {head}
               </th>
             ))}
@@ -14,7 +15,8 @@ export const Tabular = ({ data }) => {
 
         <tbody>
           {data.map((item) => (
-            <tr className="border-4  border-black">
+            <tr  key={item}
+            className="border-4  border-black">
               {Object.values(item).map((val) => (
                 <td
                   className="border-4 whitespace-nowrap px-6 py-4 font-medium"
