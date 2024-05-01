@@ -2,6 +2,7 @@ import React from "react";
 import CartoonsGallery from "./CartoonsGallery";
 import QueuingStateUpdates from "./QueuingStateUpdates";
 import RequestCounter from "./RequestCounter"
+import StateForm from "./StateForm"
 const ShowStates = () => {
   return (
     <div className="flex flex-col justify-center items-center">
@@ -21,7 +22,8 @@ const ShowStates = () => {
         unpredictably. Why does this happen? Fix both counters.
       </p>
       <RequestCounter/>
-     
+     <p>FORM </p>
+     <StateForm/>
     </div>
   );
 };
