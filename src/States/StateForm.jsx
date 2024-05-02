@@ -40,7 +40,7 @@ const StateForm = () => {
        
     }
   return (
-    <div>
+    <div className='p-5 m-2 border-2 shadow-lg rounded-lg border-blue-400'>
       this is a form
       <form className='flex flex-col' onSubmit={handleSubmit}>
       <Label>First Name : </Label>
@@ -61,8 +61,8 @@ const StateForm = () => {
 
 <Button type="submit">Submit</Button>
       </form>
-      <div className='flex flex-col'>
-     <p>MY Values</p> 
+      <div className='flex  flex-col border-2 rounded-lg shadow-xl p-5 -m-2'>
+     <p>You Submitted : </p> 
       <p>{person.firstName}</p>
      <p> {person.lastName}</p>
       <p>{person.email}</p>

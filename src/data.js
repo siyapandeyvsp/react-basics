@@ -167,3 +167,74 @@ export const disneyCharacters = [
     imageUrl:"https://c8.alamy.com/comp/BKGWDE/pluto-portrait-credit-disney-BKGWDE.jpg"
   },
 ];
+export const nestedDisney=[
+  {
+    "name": "Mickey Mouse",
+    "characteristics": {
+      "species": "Mouse",
+      "gender": "Male",
+      "occupation": "Actor",
+      "friends": ["Minnie Mouse", "Donald Duck", "Goofy"],
+      "enemies": ["Pete"],
+      "signature_outfit": "Red shorts, large yellow shoes, white gloves",
+      "personality": "Cheerful, optimistic, mischievous"
+    },
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSshX0J5jmfls6LnMkor8sMq3E_iakRWoWcCMhrF6yB_KPW4d6mOQvLISsTwP_w9OaCQj9wlQ"
+  },
+  {
+    "name": "Minnie Mouse",
+    "characteristics": {
+      "species": "Mouse",
+      "gender": "Female",
+      "occupation": "Actress",
+      "friends": ["Mickey Mouse", "Daisy Duck", "Clarabelle Cow"],
+      "enemies": ["Pete"],
+      "signature_outfit": "Polka-dot dress, bow",
+      "personality": "Sweet, caring, fashionable"
+    },
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSshX0J5jmfls6LnMkor8sMq3E_iakRWoWcCMhrF6yB_KPW4d6mOQvLISsTwP_w9OaCQj9wlQ"
+  },
+  
+  {
+    "name": "Donald Duck",
+    "characteristics": {
+      "species": "Duck",
+      "gender": "Male",
+      "occupation": "Sailor",
+      "friends": ["Mickey Mouse", "Goofy", "Daisy Duck"],
+      "enemies": ["Chip 'n' Dale"],
+      "signature_outfit": "Sailor shirt, hat, bow tie",
+      "personality": "Temperamental, determined, loyal"
+    },
+    "image": "https://img.etimg.com/thumb/width-1600,height-900,imgsize-182458,resizemode-75,msid-58980271/magazines/panache/some-fun-facts-about-disneys-most-popular-character-donald-duck.jpg"
+  },
+  {
+    "name": "Goofy",
+    "characteristics": {
+      "species": "Dog",
+      "gender": "Male",
+      "occupation": "Various",
+      "friends": ["Mickey Mouse", "Donald Duck", "Pluto"],
+      "enemies": [],
+      "signature_outfit": "Vest, pants, hat",
+      "personality": "Clumsy, good-natured, loyal"
+    },
+    "image": "https://lumiere-a.akamaihd.net/v1/images/ct_mickeymouseandfriends_goofy_ddt-16970_5d1d64dc.jpeg"
+  },
+  {
+    "name": "Daisy Duck",
+    "characteristics": {
+      "species": "Duck",
+      "gender": "Female",
+      "occupation": "Fashionista",
+      "friends": ["Minnie Mouse", "Donald Duck", "Clarabelle Cow"],
+      "enemies": [],
+      "signature_outfit": "Pink dress, bow",
+      "personality": "Sassy, assertive, stylish"
+    },
+    "image": "https://w0.peakpx.com/wallpaper/550/823/HD-wallpaper-daisy-duck-23-cartoon-daisy-duck-thumbnail.jpg"
+  }
+  
+  
+  
+]

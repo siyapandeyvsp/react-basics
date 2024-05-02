@@ -1,8 +1,12 @@
 import React from "react";
 import CartoonsGallery from "./CartoonsGallery";
 import QueuingStateUpdates from "./QueuingStateUpdates";
-import RequestCounter from "./RequestCounter"
-import StateForm from "./StateForm"
+import RequestCounter from "./RequestCounter";
+import StateForm from "./StateForm";
+import NestedObject from "./NestedObject";
+import NestedObjectImmer from "./NestedObjectImmer";
+import Challenge1 from "./Challenge1";
+import ArrayState from "./ArrayState";
 const ShowStates = () => {
   return (
     <div className="flex flex-col justify-center items-center">
@@ -21,9 +25,16 @@ const ShowStates = () => {
         possible!). And if you click fast twice, both counters seem to behave
         unpredictably. Why does this happen? Fix both counters.
       </p>
-      <RequestCounter/>
-     <p>FORM </p>
-     <StateForm/>
+      <RequestCounter />
+      <p>FORM </p>
+      <StateForm />
+      <p>Practice Upating a nested object </p>
+      <NestedObject />
+      <p>Updating nested object using Immer Library </p>
+      <NestedObjectImmer />
+     
+      <Challenge1/>
+      <ArrayState/>
     </div>
   );
 };
