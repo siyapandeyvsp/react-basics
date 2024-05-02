@@ -74,7 +74,7 @@ const handleSortList=()=>{
   return (
     <div className=" m-5 p-3 border-2 rounded-lg shadow-xl">
       <h1>Inspiring sculptors:</h1>
-      <div className="flex justify-around">
+      <div className="flex justify-around  flex-col sm:flex-row">
         <Input
           className="w-full"
           value={name}
