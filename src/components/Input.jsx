@@ -1,6 +1,6 @@
 import React from "react";
 
-const Input = ({ name, value, onChange ,className}) => {
+const Input = ({ name, value,type, onChange ,className}) => {
   return (
     
       <input
@@ -8,6 +8,7 @@ const Input = ({ name, value, onChange ,className}) => {
         name={name}
         value={value}
         onChange={onChange}
+        type={type}
       />
     
   );

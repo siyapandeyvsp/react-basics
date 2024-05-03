@@ -9,7 +9,7 @@ import {
   faTrash,
 } from "@fortawesome/free-solid-svg-icons";
 import Label from "../components/Label";
-let nextId = 0;
+import { nanoid, customAlphabet } from 'nanoid';
 
 export default function ArrayState() {
   const [name, setName] = useState("");
@@ -17,6 +17,9 @@ export default function ArrayState() {
   const [editMode, setEditMode] = useState(false);
   const [editingId, setEditingId] = useState(null);
   const [insertAt, setInsertAt] = useState(0);
+  const [date,setDate]=useState(null);
+  console.log(artists)
+  const nanoid = customAlphabet('0123456789', 4);
   const handleLowerCase = () => {
     setArtists(
       artists.map((artist) => ({
@@ -61,25 +64,37 @@ export default function ArrayState() {
     const newArray=[...artists]
     setArtists(newArray.reverse())
   }
-// const handleSortList=()=>{
-//     const newArray=[...artists]
-//     setArtists(newArray.sort())
-// }
+
 const handleSortList=()=>{
     const newArray=[...artists]
     newArray.sort((a, b) => a.name.localeCompare(b.name));
 
     setArtists(newArray.sort())
 }
+const handleSortDate=()=>{
+    const newArray=[...artists]
+    newArray.sort((a, b) => a.date.localeCompare(b.date));
+
+    setArtists(newArray.sort())
+}
+const handleSortId=()=>{
+    const newArray=[...artists]
+    newArray.sort((a, b) => a.id-b.id);
+
+    setArtists(newArray.sort())
+}
   return (
     <div className=" m-5 p-3 border-2 rounded-lg shadow-xl">
       <h1>Inspiring sculptors:</h1>
-      <div className="flex justify-around  flex-col sm:flex-row">
+      <div className="flex flex-wrap justify-around  flex-col sm:flex-row">
         <Input
           className="w-full"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
+        <Label>Birthday
+        <Input type="date" onChange={(e)=>setDate(e.target.value)}/>
+         </Label>
         <Label>
           Insert At :
           <Input
@@ -94,8 +109,9 @@ const handleSortList=()=>{
             setArtists([
               ...artists.slice(0,insertAt),
               {
-                id: nextId++,
+                id: nanoid(),
                 name: name,
+                date:date
               },
               ...artists.slice(insertAt)
             ]);
@@ -118,7 +134,11 @@ const handleSortList=()=>{
                 onChange={(e) => handleEditChange(e, artist.id)}
               />
             ) : (
-              artist.name
+              <div className="flex justify-between w-full ">
+             <div>{artist.id}</div>
+             <div >{ artist.name} </div>  
+             <div>{artist.date}</div>
+             </div>
             )}
             <div className="flex justify-between">
               {editingId !== artist.id ? (
@@ -147,7 +167,7 @@ const handleSortList=()=>{
           </li>
         ))}
       </ul>
-      <div className="flex flex-col sm:flex-row">
+      <div className="flex flex-wrap justify-evenly flex-col sm:flex-row ">
         <Button className="bg-orange-400" onClick={handleLowerCase}>
           lowercase all
         </Button>
@@ -161,7 +181,9 @@ const handleSortList=()=>{
           Reverse All
         </Button>
         <Button onClick={handleInvertList}>Invert List </Button>
-        <Button onClick={handleSortList}>Sort List </Button>
+        <Button onClick={handleSortList}>Sort By Name  </Button>
+        <Button onClick={handleSortDate}>Sort By Date  </Button>
+        <Button onClick={handleSortId}>Sort By id  </Button>
       </div>
     </div>
   );
