@@ -9,7 +9,7 @@ import {
   faTrash,
 } from "@fortawesome/free-solid-svg-icons";
 import Label from "../components/Label";
-import { nanoid, customAlphabet } from 'nanoid';
+import { customAlphabet } from 'nanoid';
 
 export default function ArrayState() {
   const [name, setName] = useState("");
